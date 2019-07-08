@@ -1,16 +1,18 @@
+# -*- coding: utf-8 -*-
+
 """Summary
 """
 import os
 import json
 
-from orbis import app
-from orbis.libs import files
+from orbis_eval import app
+from orbis_eval.libs import files
 
 
-class CacheWebserviceResults(object):
+class Main(object):
 
     def __init__(self, rucksack):
-        super(CacheWebserviceResults, self).__init__()
+        super(Main, self).__init__()
         self.rucksack = rucksack
         self.config = self.rucksack.open["config"]
 
@@ -22,6 +24,6 @@ class CacheWebserviceResults(object):
         files.create_folder(path)
         for item in self.rucksack.itemsview():
             file_name = os.path.join(path, str(item['index']) + ".json")
-            print(file_name)
+            # print(file_name)
             with open(file_name, "w") as open_file:
                 json.dump(item["computed"], open_file)
