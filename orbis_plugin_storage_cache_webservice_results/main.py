@@ -9,6 +9,10 @@ from orbis_eval import app
 from orbis_eval.libs import files
 
 
+import logging
+logger = logging.getLogger(__name__)
+
+
 class Main(object):
 
     def __init__(self, rucksack):
