@@ -5,7 +5,7 @@
 import os
 import json
 
-from orbis_eval import app
+from orbis_eval.core import app
 from orbis_eval.libs import files
 
 

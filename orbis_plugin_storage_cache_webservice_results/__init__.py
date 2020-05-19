@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 __name__ = "orbis_plugin_storage_cache_webservice_results"
-__version__ = "2.2"
+__version__ = "2.2.4"
 __author__ = "fabod"
 __year__ = "2019"
 __description__ = "The storage plugin to cache webservice results."
